@@ -1,3 +1,5 @@
+
+   
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
@@ -13,9 +15,6 @@ const orderSchema = new Schema({
       ref: 'Product'
     }
   ]
-},
-{
-  toJSON: {virtuals: true}
 });
 
 const Order = mongoose.model('Order', orderSchema);
